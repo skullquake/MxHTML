@@ -78,12 +78,24 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
-	public static void ivk_htmldocument_test(IContext context)
+	public static void ivk_htmldocument_test_gui(IContext context)
 	{
 		try
 		{
 			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
-			Core.execute(context, "MxHTMLP.ivk_htmldocument_test", params);
+			Core.execute(context, "MxHTMLP.ivk_htmldocument_test_gui", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static java.lang.String ivk_htmldocument_test_rest(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			return (java.lang.String)Core.execute(context, "MxHTMLP.ivk_htmldocument_test_rest", params);
 		}
 		catch (CoreException e)
 		{

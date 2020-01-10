@@ -118,6 +118,18 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
+	public static java.lang.String ivk_htmldocument_test_rest(IContext context)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			return (java.lang.String)Core.execute(context, "MxHTMLNP.ivk_htmldocument_test_rest", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
 	public static void ivk_node_attribute_add(IContext context, mxhtmlnp.proxies.Node _obj_node)
 	{
 		try
