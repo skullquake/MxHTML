@@ -20,7 +20,9 @@ public class Preview
 	 */
 	public enum MemberNames
 	{
-		Value("Value");
+		Value("Value"),
+		BoolRender("BoolRender"),
+		BoolHTML("BoolHTML");
 
 		private java.lang.String metaName;
 
@@ -141,6 +143,78 @@ public class Preview
 	public final void setValue(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String value)
 	{
 		getMendixObject().setValue(context, MemberNames.Value.toString(), value);
+	}
+
+	/**
+	 * @return value of BoolRender
+	 */
+	public final java.lang.Boolean getBoolRender()
+	{
+		return getBoolRender(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of BoolRender
+	 */
+	public final java.lang.Boolean getBoolRender(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.BoolRender.toString());
+	}
+
+	/**
+	 * Set value of BoolRender
+	 * @param boolrender
+	 */
+	public final void setBoolRender(java.lang.Boolean boolrender)
+	{
+		setBoolRender(getContext(), boolrender);
+	}
+
+	/**
+	 * Set value of BoolRender
+	 * @param context
+	 * @param boolrender
+	 */
+	public final void setBoolRender(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean boolrender)
+	{
+		getMendixObject().setValue(context, MemberNames.BoolRender.toString(), boolrender);
+	}
+
+	/**
+	 * @return value of BoolHTML
+	 */
+	public final java.lang.Boolean getBoolHTML()
+	{
+		return getBoolHTML(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of BoolHTML
+	 */
+	public final java.lang.Boolean getBoolHTML(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.BoolHTML.toString());
+	}
+
+	/**
+	 * Set value of BoolHTML
+	 * @param boolhtml
+	 */
+	public final void setBoolHTML(java.lang.Boolean boolhtml)
+	{
+		setBoolHTML(getContext(), boolhtml);
+	}
+
+	/**
+	 * Set value of BoolHTML
+	 * @param context
+	 * @param boolhtml
+	 */
+	public final void setBoolHTML(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean boolhtml)
+	{
+		getMendixObject().setValue(context, MemberNames.BoolHTML.toString(), boolhtml);
 	}
 
 	/**

@@ -171,4 +171,34 @@ public class Microflows
 			throw new MendixRuntimeException(e);
 		}
 	}
+	public static void ivk_util_addattr(IContext context, java.lang.String _str_k, java.lang.String _str_v, mxhtmlnp.proxies.Node _obj_node)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("str_k", _str_k);
+			params.put("str_v", _str_v);
+			params.put("obj_node", _obj_node == null ? null : _obj_node.getMendixObject());
+			Core.execute(context, "MxHTMLNP.ivk_util_addattr", params);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
+	public static mxhtmlnp.proxies.Node ivk_util_addchildnode(IContext context, java.lang.String _str_name, mxhtmlnp.proxies.Node _obj_node_parent)
+	{
+		try
+		{
+			Map<java.lang.String, Object> params = new HashMap<java.lang.String, Object>();
+			params.put("str_name", _str_name);
+			params.put("obj_node_parent", _obj_node_parent == null ? null : _obj_node_parent.getMendixObject());
+			IMendixObject result = (IMendixObject)Core.execute(context, "MxHTMLNP.ivk_util_addchildnode", params);
+			return result == null ? null : mxhtmlnp.proxies.Node.initialize(context, result);
+		}
+		catch (CoreException e)
+		{
+			throw new MendixRuntimeException(e);
+		}
+	}
 }
