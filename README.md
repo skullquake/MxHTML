@@ -1,5 +1,5 @@
-# MxGFXUtils
-MxGFXUtils
+# MxHTML
+MxHTML
 
 
 [Demo](https://mxghtml-sandbox.mxapps.io/)
